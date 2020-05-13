@@ -1,0 +1,14 @@
+﻿@model InfoEnvWebApp.Controllers.Info
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <p>Framework: @Model.Framework</p>
+        <p>Data: @Model.Date</p>
+        <p>OS Version: @Model.OSVersion</p>
+        <p>Variável ambiente: @Model.VariavelAmbiente</p>
+        <p>Variável app settings: @Model.VariavelAppSetting</p>
+    </div>
