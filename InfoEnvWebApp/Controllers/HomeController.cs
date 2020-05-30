@@ -29,7 +29,7 @@ namespace InfoEnvWebApp.Controllers
                 Framework = Assembly.GetEntryAssembly()?.GetCustomAttribute<TargetFrameworkAttribute>()?.FrameworkName,
                 Date = DateTime.Now,
                 VariavelAmbiente = System.Environment.GetEnvironmentVariable("INFO_VAR"),
-                VariavelAppSetting = _conf.GetSection("Teste").GetValue<string>("Complex")
+                VariavelAppSetting = _conf.GetSection("VaravelAppSettings").GetValue<string>("VariavelV1")
             });
         }
 
